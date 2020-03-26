@@ -16,6 +16,7 @@ return (
         }}>
             <label className='email-label' htmlFor='email'>Email Address</label>
             <input 
+            className='focus'
             type='email' 
             id='email' 
             required

@@ -63,6 +63,10 @@ $opacity: 0.8;
           }
     }
 
+    input.focus,button:focus {
+        outline-width: 0;
+    }
+
     form {
         margin-top: 40px;
         display: flex;
