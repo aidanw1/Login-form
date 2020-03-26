@@ -1,0 +1,18 @@
+@import 'fonts.css';
+$font-stack: Gotham, sans-serif;
+$fontsize: 18px;
+$bgcolor: #F1F1F1;
+
+
+*, *::before, *::after {
+    font-family: $font-stack;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: $fontsize;
+    background-color: $bgcolor;
+    padding: 0;
+    margin: 0;
+  }
+

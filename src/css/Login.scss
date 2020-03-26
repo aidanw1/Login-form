@@ -1,0 +1,108 @@
+@import 'fonts.css';
+
+$loginBgColor: white;
+$subTextColor: lightgrey;
+$padding: 2rem;
+$border: 1px solid lightgrey;
+$margin: 0px;
+//Main header
+$headingSize: 1.4rem;
+$headingBold: 400;
+$mainColor: #4C494B;
+//Sub font elements
+$subHeadingBold: 400;
+$subHeadingSize: 0.8rem;
+$subFontColor: #B2AfB1;
+//Sub font colors
+
+//Border
+$border: 1px solid #e4e3e4;
+$opacity: 0.8;
+
+
+.loginContainer {
+    padding: $padding;
+    background: $loginBgColor;
+    min-width: 20vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-box-shadow: 0px 1px 3px 1px rgba(230,227,230,1);
+    -moz-box-shadow: 0px 1px 3px 1px rgba(230,227,230,1);
+    box-shadow: 0px 1px 3px 1px rgba(230,227,230,1);
+
+    .heading {
+        color: $mainColor;
+        margin: $margin;
+        margin-top: 15px;
+        font-size: $headingSize;
+        font-weight: $headingBold;
+        padding-top: 7px;
+    }
+
+    .subHeader {
+        margin: $margin;
+        margin-top: 10px;
+        padding-left: 3px;
+        font-weight: $subHeadingBold;
+        font-size: $subHeadingSize;
+        color: $subFontColor;
+    }
+
+    form {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        .email-label {
+            font-size: 0.8rem;
+            color: #484848;
+            padding-bottom: 5px;
+            font-weight: 300;
+        }
+        input {
+            padding: 10px;
+            border-radius: 5px;
+            opacity: $opacity;
+            border: $border;
+        }
+        input[type="checkbox"] {
+            margin: 0px;
+        }
+
+        .remember-device {
+            font-weight: 300;
+            font-size: 0.7rem;
+            color: $mainColor;
+            margin-top: 15px;
+        }
+        .remember-label {
+            font-weight: $subHeadingBold;
+            padding-left: 10px;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+            opacity: $opacity;
+            border: $border;
+            width: 80px;
+            margin-top: 35px;
+        }
+    }
+
+ 
+}
+
+@media only screen and (max-width: 620px) {
+    .loginContainer {
+      width: 60vw;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .loginContainer {
+      width: 80vw;
+    }
+  }
