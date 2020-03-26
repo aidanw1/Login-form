@@ -31,6 +31,13 @@ $opacity: 0.8;
     -webkit-box-shadow: 0px 1px 3px 1px rgba(230,227,230,1);
     -moz-box-shadow: 0px 1px 3px 1px rgba(230,227,230,1);
     box-shadow: 0px 1px 3px 1px rgba(230,227,230,1);
+    @media screen and (max-width: 610px) {
+        width: 60vw;
+      }
+    @media screen and (max-width: 430px) {
+        width: 70vw;
+    }
+    
 
     .heading {
         color: $mainColor;
@@ -39,6 +46,9 @@ $opacity: 0.8;
         font-size: $headingSize;
         font-weight: $headingBold;
         padding-top: 7px;
+        @media screen and (max-width: 610px) {
+            font-size: 1.1rem;
+          }
     }
 
     .subHeader {
@@ -48,6 +58,9 @@ $opacity: 0.8;
         font-weight: $subHeadingBold;
         font-size: $subHeadingSize;
         color: $subFontColor;
+        @media screen and (max-width: 610px) {
+            font-size: 0.7rem;
+          }
     }
 
     form {
@@ -75,10 +88,13 @@ $opacity: 0.8;
             font-size: 0.7rem;
             color: $mainColor;
             margin-top: 15px;
+            display: flex;
+            align-items: center;
         }
         .remember-label {
             font-weight: $subHeadingBold;
             padding-left: 10px;
+            padding-top: 2px;
         }
 
         button {
@@ -94,15 +110,3 @@ $opacity: 0.8;
 
  
 }
-
-@media only screen and (max-width: 620px) {
-    .loginContainer {
-      width: 60vw;
-    }
-  }
-
-  @media only screen and (max-width: 400px) {
-    .loginContainer {
-      width: 80vw;
-    }
-  }
